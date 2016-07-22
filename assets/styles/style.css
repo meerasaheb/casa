@@ -1,0 +1,711 @@
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.submittooltip {
+    position: relative;
+}
+
+.submittooltip .goimg {
+    visibility: hidden;
+    width: 67px;
+    background-color: #00a6b6;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -66px;
+    margin-bottom: 5px;
+}
+
+.submittooltip .goimg::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -17px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #00a6b6 transparent transparent transparent;
+}
+
+.submittooltip:hover .goimg {
+    visibility: visible;
+}
+
+.edittooltip {
+    position: relative;
+}
+
+.edittooltip .editimg {
+    visibility: hidden;
+    width: 67px;
+    background-color: #00a6b6;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -80px;
+    margin-bottom: 5px;
+}
+
+.edittooltip .editimg::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #00a6b6 transparent transparent transparent;
+}
+
+.edittooltip:hover .editimg {
+    visibility: visible;
+}
+
+
+.deletetooltip {
+    position: relative;
+}
+
+.deletetooltip .deleteimg {
+    visibility: hidden;
+    width: 76px;
+    background-color: #00a6b6;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -59px;
+    margin-bottom: 5px;
+}
+
+.deletetooltip .deleteimg::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #00a6b6 transparent transparent transparent;
+}
+
+.deletetooltip:hover .deleteimg {
+    visibility: visible;
+}
+.entitySubmitToolTip{
+   position: relative;
+}
+.entitySubmitToolTip .goimg {
+    visibility: hidden;
+    width: 67px;
+    background-color: #00a6b6;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 19.8em;
+    margin-bottom: -0.3em;
+}
+
+.entitySubmitToolTip .goimg::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #00a6b6 transparent transparent transparent;
+}
+
+.entitySubmitToolTip:hover .goimg {
+    visibility: visible;
+}
+
+
+.fieldSubmitToolTip {
+    display: inline;
+    position: relative;
+}
+
+.fieldSubmitToolTip .addImg {
+    visibility: hidden;
+    width: 67px;
+    background-color: #00a6b6;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 1.9em;
+    margin-bottom: 0.5em;
+
+}
+
+.fieldSubmitToolTip .addImg::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #00a6b6 transparent transparent transparent;
+}
+
+.fieldSubmitToolTip:hover .addImg {
+    visibility: visible;
+}
+
+/*.edittooltip .editimg {
+    visibility: hidden;
+    width: 67px;
+    background-color: #00a6b6;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;*/
+    /* Position the tooltip */
+   /* position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 71px;
+    margin-bottom: -147px;
+}
+
+.edittooltip .editimg::after {
+    content: "";
+    position: absolute;
+    top: -45%;
+    margin-left: -15px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #00a6b6 transparent;
+}
+
+.edittooltip:hover .editimg {
+    visibility: visible;
+}
+*/
+/*.deletetooltip .deleteimg {
+    visibility: hidden;
+    width: 67px;
+    background-color: #00a6b6;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+*/    /* Position the tooltip */
+/*    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: 156px;
+    margin-bottom: -117px;
+}
+
+.deletetooltip .deleteimg::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    margin-left: -62px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #00a6b6 transparent transparent;
+}
+
+.deletetooltip:hover .deleteimg {
+    visibility: visible;
+}
+*/
+html,.container-fluid {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+
+}
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.go-button{
+  width: 3%;
+    float: right;
+    margin-top: -1%;
+    margin-right: 5%;
+    background-color: #fff;
+    padding: 1%;
+    border-radius: 2em;
+}
+.field-add-button{
+	float: right;
+    margin-top: -3.5%;
+}
+
+h3{
+	width: 100%;
+	padding-bottom: 1%;
+	margin-right: 0%;
+	margin-left: 1.4em;
+}
+
+h3 input{
+	float: right;
+	margin-right: 10%;
+	width: 3%;
+	 /*width="48";
+	  height="48";*/
+}
+
+#clear{
+	width: 27%;
+	margin-left:1%; 
+}
+
+.add{
+	width: 4%;
+	float: right;
+}
+
+.container-fluid {
+	background-color: #00A6B6; 
+	overflow-y: hidden;
+	overflow-x: hidden;
+	overflow: auto;
+}
+
+.container {
+	width: 82.9%;
+	margin: 0 auto;
+}
+
+.dot {
+	visibility: hidden;
+}
+
+.site-header {
+	width: 100%;
+	background-color: #FFF;
+	border-radius: 0.9em;
+}
+
+.site-logo {
+	display: inline-block;
+	width: 20%;
+	margin-left: 1.9%;
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.site-logo img {
+	width: 41%;
+	height: 7%;
+}
+
+.tenant {
+	width: 50%;
+	float: left;
+	margin-top: 1%;
+	margin-bottom: 2%;
+}
+
+.new-tenant {
+	display: block;
+	
+	float: left;
+}
+.new-tenant h3 {
+	/*font-size: 1.1em;*/
+	margin-left: 0.2em;
+}
+
+.tenant-name {
+	display: block;
+	width: 78%;
+	margin-left: 0.6%;
+	float: left;
+ 
+}
+
+.tenant-name label {
+	font-size: 1.1em;
+}
+
+.tenant-name input {
+   border-radius: 0.5em;
+   width: 77%;
+   padding: 1.2%;	
+   border-style: solid;
+   border-width: 2px;
+   border-color: #EFEFF0;
+   text-transform: uppercase;
+}
+.clearfix {
+	clear: both;
+}
+
+.tenant-buttons {
+	width: 10%;
+	float: left;
+  margin-top: 7.3%;
+  margin-left: -11.5%;
+	/*margin-top: 6.6%;
+	margin-left: -12.5%;*/
+}
+
+.tenant-buttons img {
+	width: 25%;
+	/*margin-left: 10%;*/
+  float: left;
+}
+.dummy{
+	width: 82.9%;
+}
+.main-section::before {
+	position: absolute;
+	z-index: 1;
+	
+	background-color: #44666a; /*#00A6B6;*/
+	opacity: 0.5;
+	width: 100%;
+	height: 100%;
+    content:'';
+    /*margin-top: 3.5em;*/
+    border-radius: 0.9em;
+
+}
+
+
+.main-section{
+	position: relative;
+	margin-top: 3em;
+	border-radius: 0.9em;
+	background:#FFFFFF;
+	/*font-size: 1.1em;*/
+	padding-bottom: 0.9em;
+}
+.main-section h3{
+	padding-top: 1%;
+	padding-left: 25px;
+}
+.fixed-entity{
+	background:rgba(6,153,185,0.8);
+	border-radius: 0.9em;
+	border:2px solid #4FC3F7;/*#EFEFF0;*/
+	border-width: thin;
+	/*margin-left: 1em;
+	margin-right: 1em;*/
+
+
+
+}
+.fixed-entity-name-block{
+	margin-top: 1.1em;
+	margin-left: 2.65em;
+}
+#fixed-entity-name{
+	 border-radius: 0.5em;
+   width: 33%;
+   padding: 0.9%;	
+   border-style: solid;
+   border-width: 2px;
+   border-color: #EFEFF0;
+   text-transform: uppercase;
+   
+  
+}
+.fixed-field{
+	margin-left:4.7em;
+
+}
+.fixed-entity-field-block{
+	margin-top: 0.5em;
+	margin-left: 2.3em;
+	margin-right: 4.3em;
+	margin-bottom: 1.1em;
+	background:#FFFFFF;
+	border-radius: 0.9em;
+	border:2px solid #4FC3F7; /*#EFEFF0;*/
+	border-width: thin;
+	padding: 23px 17px 23px 33px;
+
+}
+
+#fixed-entity-field-name {
+	border-radius: 0.5em;
+   width: 32%;
+   padding: 0.9%;	
+   border-style: solid;
+   border-width: 2px;
+   border-color: #EFEFF0;	
+   text-transform: capitalize;
+
+}
+ label[for='fixed-entity-field-type'] {
+	margin-left: 2.5em;
+}
+
+#fixed-entity-field-type{
+	border: 2px solid #EFEFF0;
+	border-radius: 0.5em;
+	width: 32%;
+	padding: 6px;	
+}
+.entityClass{
+
+	margin-top: 3%; 
+	color:white; 
+	font-size:18px
+	text-transform: capitalize;
+}
+
+.accordion dl { border: 1px solid #ddd; }
+/*marees*/
+.accordion dl:after {
+  content: "";
+  display: block;
+  height: 0.8em;
+  width: 100%;
+  background-color: #00a6b6;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.accordion dt > a {
+  text-align: center;
+  font-weight: 700;
+  padding: 1em;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.accordion dd {
+  background-color: #eee;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.accordion dd > p {
+  padding: 1em 2em 1em 2em;
+  margin: 0;
+}
+
+.accordion {
+  position: relative;
+  background-color: #eee;
+border-radius: 1em;
+}
+
+.accordionTitle {
+  background-color: #37ADC7;
+  /*border-bottom: 1px solid #DCE775;*/
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  /*marees*/
+}
+
+.accordionTitle:before {
+  content: "+";
+  font-size: 2em;
+  margin-left: 1em;
+  margin-top: 0.6em;
+  line-height: 0.5em;
+  float: left;
+  -moz-transition: -moz-transform 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordionTitle:hover {
+ background-color: #00A6B6; 
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;}
+
+.accordionTitleActive { 
+	background-color: #00a6b6; 
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;}
+
+.accordionTitleActive:before {
+  -webkit-transform: rotate(-225deg);
+  -moz-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
+
+.accordionItem {
+  height: auto;
+  overflow: hidden;
+}
+@media all {
+
+.accordionItem {
+  max-height: 50em;
+  -moz-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s;
+}
+}
+@media screen and (min-width: 48em) {
+
+.accordionItem {
+  max-height: 15em;
+  -moz-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+}
+}
+
+.accordionItemCollapsed { max-height: 0; }
+
+.animateIn {
+  -webkit-animation-name: accordionIn;
+  -webkit-animation-duration: 0.65s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-name: normal;
+  -moz-animation-duration: 0.65s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: alternate;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: both;
+  -moz-animation-delay: 0s;
+  animation-name: accordionIn;
+  animation-duration: 0.65s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+
+.animateOut {
+  -webkit-animation-name: accordionOut;
+  -webkit-animation-duration: 0.75s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-delay: 0s;
+  -moz-animation-name: accordionOut;
+  -moz-animation-duration: 0.75s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-direction: alternate;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: both;
+  -moz-animation-delay: 0s;
+  animation-name: accordionOut;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+ @-webkit-keyframes 
+accordionIn {  0% {
+ opacity: 0;
+ -webkit-transform: scale(0.8);
+}
+ 100% {
+ opacity: 1;
+ -webkit-transform: scale(1);
+}
+}
+@-moz-keyframes 
+accordionIn {  0% {
+ opacity: 0;
+ -moz-transform: scale(0.8);
+}
+ 100% {
+ opacity: 1;
+ -moz-transform: scale(1);
+}
+}
+@keyframes 
+accordionIn {  0% {
+ opacity: 0;
+ transform: scale(0.8);
+}
+ 100% {
+ opacity: 1;
+ transform: scale(1);
+}
+}
+@-webkit-keyframes 
+accordionOut {  0% {
+ opacity: 1;
+ -webkit-transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -webkit-transform: scale(0.8);
+}
+}
+@-moz-keyframes 
+accordionOut {  0% {
+ opacity: 1;
+ -moz-transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ -moz-transform: scale(0.8);
+}
+}
+@keyframes 
+accordionOut {  0% {
+ opacity: 1;
+ transform: scale(1);
+}
+ 100% {
+ opacity: 0;
+ transform: scale(0.8);
+}
+}

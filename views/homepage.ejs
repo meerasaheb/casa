@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TENANT</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/tingle.min.css">
+    <script src="/js/tingle.min.js"></script>
+    <script src="/js/lodash.core.min.js"></script>
+     <script src="/js/json2.js"></script>
+     <script src="/js/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="dot">.</div>
+            <div class="site-header">
+                <div class="site-logo">
+                    <img src="/images/logo.png" alt="LOGO">
+                </div>
+                <div class='tenant'>
+                    <div class="new-tenant">
+                        <h3>NEW TENANT</h3>
+                    </div>
+                    <div class="tenant-name">
+                    
+                        <label for="tenant-name">NAME:</label>
+                        <input type="text" id="tenant-name" placeholder="tenant name" autofocus="autofocuse"/>
+                        <input type="hidden" name="id" value="" id="tenantId">
+                       
+                    </div>
+                </div>
+                <div class="tenant-buttons">
+                <div class="submittooltip">
+                    <a id="save_entity" href="#"><img src="/images/go.png" alt="GO"></a><div class="goimg">Submit</div>
+                    </div>
+                    <div class="edittooltip">
+                    <a href="#"><img src="/images/edit-sans.png" alt="EDIT"></a>
+                    <div class="editimg">Edit</div>
+                    </div>
+                    <div class="deletetooltip">
+                    <a href="#"><img src="/images/delete.png" alt="DELETE"></a>
+                    <div class="deleteimg">Remove</div>
+                    </div>
+                     <!-- <input type="image" src="/images/delete.png" alt="save" id="clear" onclick=""> -->
+                </div>
+
+                <div class='clearfix'></div>
+            </div>
+            
+            <div class="main-section">
+                <h3>ENTITIES </h3>
+                <div class="container">
+                    <div class="fixed-entity">
+
+
+                        <div class="fixed-entity-name-block">
+                        <div class="entitySubmitToolTip">
+                            <input class="go-button" type="image" src="/images/arrow.png" alt="save" id="save" onclick="saveAll()">
+                            <div class="goimg">Submit</div></div>
+
+                            <label for="fixed-entity-name">NAME:</label>
+                            
+                            <input type="text" id="fixed-entity-name" data-value="entity" placeholder="entity name"/>
+                            <input type="hidden" name="id" value="" id="setId">
+                        </div>
+                        <h3 class="col-lg-12">FIELD:</h3>
+                        <div class="fixed-entity-field-block">
+                        
+                            <label for="fixed-entity-field-name">NAME:</label>
+                            <input type="text" id="fixed-entity-field-name" data-value="field" placeholder="field name"/>
+                            <label for="fixed-entity-field-type">TYPE:</label>
+                            <select name="type" id="fixed-entity-field-type" data-value="type">
+                                <option value="String">String</option>
+                                <option value="Number">Number</option>
+                                <option value="Date">Date</option>
+                            </select>
+                            <div class="fieldSubmitToolTip">
+                                <input class="add" type="image" src="/images/Add-green.png" alt="add">
+                            <span class="addImg">Add</span>
+                            </div>
+                            <div class='clearfix'></div>
+                        </div>
+                        <div class="temp-value"></div>
+                        
+                    </div>
+                    <div class="show">
+                </div>
+
+            </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/script.js"></script>
+</body>
+
+</html>
